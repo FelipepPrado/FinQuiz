@@ -20,13 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         // 1. Criamos a nossa primeira tela principal
-        let contentView = LearningView()
-        
-        // 2. Colocamos ela como a Raiz da Navigation Controller
-        let navigationVC = UINavigationController(rootViewController: contentView)
-        
-        // 3. Definimos a Navigation como a principal da janela
-        window?.rootViewController = navigationVC
+        let home = HomeController()
+        window?.rootViewController = home
         window?.makeKeyAndVisible()
         
     }
